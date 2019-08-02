@@ -1,8 +1,8 @@
 <template>
-  <div class="max-w-xs rounded overflow-hidden shadow-lg">
+  <div class="max-w-xs rounded shadow-lg">
     <img class="w-full" src="https://picsum.photos/200/200" alt="Sunset in the mountains" />
     <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">Product Name</div>
+      <div class="font-bold text-xl mb-2">{{product.name}}</div>
       <p class="text-gray-700 text-base">Product Description</p>
     </div>
     <div class="px-6 py-4">
@@ -12,7 +12,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: ['product']
+}
 </script>
 
 <style>
