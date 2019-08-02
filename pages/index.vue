@@ -1,10 +1,15 @@
 <template>
-  <div>hello</div>
+  <div>
+    <couponItem />
+  </div>
 </template>
 
 <script>
+import couponItem from '../components/couponItem'
 export default {
-  components: {}
+  components: {
+    couponItem
+  }
 }
 </script>
 
